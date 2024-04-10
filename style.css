@@ -1,0 +1,175 @@
+:root {
+    --color: white;
+    --color1: #000000;
+    /* --color2: rgba(127, 212, 212);
+    --color3:rgba(110, 208, 208); */ 
+    --color2:rgb(30, 30, 30);
+    --color3:#101010;
+    --color5:#F2E205;
+    --color4:#A60D0D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el header */
+    padding: 10px; /* Añade un poco de espacio alrededor del contenido del header */
+}
+.menu {
+    display: none; /* Inicialmente oculto */
+}
+.hamb {
+    padding: 0;
+    width: 50px; /* Ajusta el ancho del botón de hamburguesa */
+    height: 50px; /* Ajusta la altura del botón de hamburguesa */
+    background-color: var(--color1);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el contenido del botón de hamburguesa */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+
+  position: relative;
+  z-index: 1000;
+    
+}
+
+.linea {
+    width: 70%; /* Ajusta el ancho de las líneas */
+    height: 6px; /* Establece la altura de las líneas */
+    background-color: var(--color); /* Utiliza el color definido por la variable --color */
+    position: absolute; /* Coloca las líneas de manera absoluta dentro del botón de hamburguesa */
+    transition: transform 0.3s ease; /* Añade una transición suave para el efecto de hamburguesa */
+}
+
+.linea.linea0 {
+     transform: translateY(-10px) 
+}
+
+.linea.linea1 {
+    transform: translateY(0px)
+}
+.linea.linea3 {
+    transform: translateY(10px)
+}
+
+
+
+.hamb.active .linea0 {
+    transform: translateY(0) rotate(45deg); /* Muestra la primera línea y la rota */
+}
+
+.hamb.active .linea1 {
+    transform: translateY(0) rotate(-45deg); /* Muestra la segunda línea y la rota */
+}
+.hamb.active .linea3 {
+   opacity: 0;
+}
+.menu.active{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    width: calc(100vw - 10px); /* Resta el grosor del borde del ancho total */
+  
+    justify-content: space-evenly;
+    position: absolute;
+    top:0px;
+    left: 0;
+    flex-direction: row;
+    animation: entrada 3s ease ;
+    z-index: 999;
+  
+}
+
+ul{
+    background-color: rgba(127, 212, 212, 0.416);
+    background-color:var(--color2);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+li{
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:var(--color);
+    animation: menu 4s ease;
+}
+.info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(127, 212, 212, 0.256);
+    background-color:var(--color3);
+    color:var(--color);
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+
+.header_text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    position: relative;
+    z-index: 1000;
+    border: 1px solid white;
+    /* background-color: aliceblue; */
+    /* color: #000000;
+    padding: 2px; */
+}
+
+.header_text::after{
+   content:"";
+   display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color4);
+    border-radius: 50%;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+
+a:hover{
+    text-decoration: underline var(--color5);
+}
+/*  main */
+
+
+
+
+
+
+
+
+@keyframes entrada{
+    from{
+        left:-100vw;
+    }
+    to{
+        left:0
+    }
+}
+
+@keyframes menu{
+    0%{
+       translate: -50vw;
+    }
+   
+    100%{
+       translate: 0;
+    }
+}
