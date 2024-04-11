@@ -1,9 +1,17 @@
+body{
+  background-image: url(/assets/icontactbg.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+
+
 .container{
     display: flex;
     flex-wrap: wrap;
     gap:8px;
     justify-content: center;
-    background-color: var(--color);
+    /* background-color: var(--color); */
     margin: 10px;
 
 }

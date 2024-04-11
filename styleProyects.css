@@ -1,0 +1,285 @@
+
+
+
+.text p, p{
+    font-family:"Druk Wide Web Bold Regular",sans-serif;
+   color:var(--color4);
+    font-size: 2rem;
+    cursor:pointer;
+    
+    
+}
+
+.contenedor p{
+ color: #ffffff;
+}
+.text p:hover{
+    color: #b496803c; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #b496803c;
+}
+
+.section{
+    width: 100%;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.section0{
+    margin-top: 0;
+}
+.parallax{
+    background: fixed no-repeat 80% 50%;
+    background-size: cover;
+    background-image :url(/assets/fondorayas.jpg);
+    background-image :url(/assets/ben-kolde-_dzAvvu-5oQ-unsplash.jpg);
+    background-image :url(/assets/kelly-sikkema-ReD-4a7LWoc-unsplash.jpg);
+  
+    /* background-image :url(/assets/icontactbg2.jpg); */
+;
+    /* background-image: linear-gradient(135deg, #bba08bc2, #9d999083, #aba39887, #8c8c8c73), url(/assets/fondorayas.jpg); */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 30%;
+    
+}
+.parallax1{
+  height:70vh;
+}
+#seccion1{
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    width: 80wv;
+    background-image: url(/assets/icontactbg.jpg);
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+  img{
+    view-timeline-name: --image;
+    view-timeline-axis: block ;/*acepta inline*/
+
+    animation-timeline: --image;
+    animation-name: scroll;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inconsolata', monospace;
+    user-select: none;
+
+}
+h5{
+    font-size: 6rem;
+    font-family: "Anton",sans-serif;
+    color:var(--color4)
+
+  
+}
+ .card p{
+    font-size: 1.8rem;
+ }
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Anton",sans-serif;
+    font-size: 1.5rem;
+    margin-left: 60%;
+    cursor: pointer;
+
+  }
+   .card a:hover,
+    .card a:focus {
+      color: var(--clr-primary-300);
+      text-decoration: underline;
+      text-decoration-thickness: 0.07lh;
+      text-underline-offset: 0.17lh;
+    }
+
+
+   
+
+    
+@keyframes scroll {
+    from{
+      opacity: 0;
+      scale:35%;  
+    }
+    to{
+        opacity: 1;
+        scale:100%;
+    }
+}
+
+/* 
+ */
+
+.words {
+   
+        position: relative;
+        height: 80vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+  .words p{      
+    font-size: 2.3rem;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin:2px;
+      
+  }
+  .text-column{
+    column-count: 2;
+    column-gap: 100px; /* ancho de columnas */
+    column-rule: 5px outset var(--color4); 
+    text-align: justify;
+    padding: 10px;
+
+  }
+  .w{
+    position: absolute;
+    color:var(--color4);
+  }
+
+  .w1,.w14,.w6,.w8,.w20,.w23,.w10{
+    color:var(--color5);
+  }
+  .w11,.w13,.w21,.w18,.w9,.w16,.w3{
+    color:var(--color6);
+  }
+  .w10 {
+    top: 3%;
+    left: 2%;
+}
+
+.w2 {
+    top: 63%;
+    left: 32%;
+}
+
+.w5 {
+    top: 43%;
+    left: 12%;
+}
+
+.w4 {
+    top: 23%;
+    left: 72%;
+}
+
+.w3 {
+    top: 13%;
+    left: 52%;
+}
+
+.w6 {
+    top: 83%;
+    left: 22%;
+}
+
+.w7 {
+    top: 73%;
+    left: 62%;
+}
+
+.w8 {
+    top: 33%;
+    left: 62%;
+}
+
+.w9 {
+    top: 28%;
+    left: 45%;
+}
+
+.w1 {
+    top: 53%;
+    left: 72%;
+}
+
+.w11 {
+    top: 8%;
+    left: 32%;
+}
+
+.w12 {
+    top: 63%;
+    left: 52%;
+}
+
+.w13 {
+    top: 23%;
+    left: 21%;
+}
+
+.w14 {
+    top: 23%;
+    left: 82%;
+}
+
+.w15 {
+    top: 83%;
+    left: 42%;
+}
+
+.w16 {
+    top: 73%;
+    left: 2%;
+}
+
+.w17 {
+    top: 33%;
+    left: 89%;
+}
+
+.w18 {
+    top: 83%;
+    left: 72%;
+}
+
+.w19 {
+    top: 3%;
+    left: 72%;
+}
+
+.w20 {
+    top: 63%;
+    left: 92%;
+}
+
+.w21 {
+    top: 53%;
+    left: 22%;
+}
+
+.w22 {
+    top: 43%;
+    left: 82%;
+}
+
+.w23 {
+    top: 23%;
+    left: 2%;
+}
