@@ -147,7 +147,8 @@ h5{
    color:var(--color);
 }
 .enlace{
-    color:var(--color1)
+    color:var(--color1);
+    
 }
    .footer--column{
     
@@ -166,3 +167,4 @@ h5{
 
   }
   
+
