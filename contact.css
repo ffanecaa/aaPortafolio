@@ -1,10 +1,12 @@
 body{
-    background-image: url(/assets/fondorayas.jpg);
+    background-image: url(/assets/icontactbg2.jpg);
     color:var(--color);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 3px;
    
 }
+
+
 .mainContact{
    
     margin-top: 3rem;
@@ -33,7 +35,7 @@ body{
 .text h2{
     font-size: clamp(1rem,8vw,3rem);
     margin-bottom: 2rem;
- 
+   margin-top: -20%;
 
 }
 .links{
@@ -59,3 +61,4 @@ body{
 .form input{
     padding: 5px;
 }
+

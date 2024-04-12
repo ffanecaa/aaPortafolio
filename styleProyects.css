@@ -81,20 +81,25 @@
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
-.texto{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Inconsolata', monospace;
-    user-select: none;
 
-}
 h5{
     font-size: 6rem;
     font-family: "Anton",sans-serif;
-    color:var(--color4)
+    color:var(--color4);
+    
 
   
 }
+#seccion1 h5{
+    -webkit-text-stroke-width: 0.001px; 
+    -webkit-text-stroke-color: var(--color);
+     
+}
+.btn--cu{
+    display: flex;
+    justify-content: start;
+}
+
  .card p{
     font-size: 1.8rem;
  }
@@ -134,6 +139,7 @@ h5{
 
 /* 
  */
+
 
 .words {
    

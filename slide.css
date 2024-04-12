@@ -1,0 +1,26 @@
+
+
+*{
+    overflow-y: hidden;
+}
+
+.container{
+ position: relative;
+ min-height: 100vh;
+ overflow-y: hidden;
+}
+
+
+.adelante, .atras{
+    position: absolute;
+    cursor: pointer;
+}
+
+.adelante{
+    top:50%;
+    right: 10%;
+}
+.atras{
+    top:50%;
+    left: 10%;
+}
