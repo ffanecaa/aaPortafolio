@@ -1,4 +1,13 @@
 
+
+body{
+  background-image: url(/assets/icontactbg.jpg);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.body{
+  background-image: url(/assets/icontactbg.jpg);
+}
 .slide_container{
     margin-top:20px;
     display: flex;

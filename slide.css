@@ -2,6 +2,7 @@
 
 *{
     overflow-y: hidden;
+   
 }
 
 .container{
@@ -14,6 +15,7 @@
 .adelante, .atras{
     position: absolute;
     cursor: pointer;
+  
 }
 
 .adelante{

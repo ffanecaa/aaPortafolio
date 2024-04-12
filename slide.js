@@ -1,4 +1,4 @@
-const contenido = ["index.html", "index2.html"]; // Agrega aquí los nombres de tus archivos HTML
+const contenido = ["gym.html", "retroshop.html","patrimonio.html"]; // Agrega aquí los nombres de tus archivos HTML
         let indice = 0; // Índice actual del contenido
 
         // Evento al hacer clic en el botón de avance

@@ -1,23 +1,16 @@
 
 
 
-.text p, p{
-    font-family:"Druk Wide Web Bold Regular",sans-serif;
-   color:var(--color4);
-    font-size: 2rem;
-    cursor:pointer;
-    
-    
+body{
+    background-image: url(/assets/icontactbg.jpg);
 }
 
-.contenedor p{
- color: #ffffff;
-}
-.text p:hover{
+
+/* .text p:hover{
     color: #b496803c; 
     -webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color: #b496803c;
-}
+} */
 
 .section{
     width: 100%;
@@ -37,21 +30,16 @@
     background-image :url(/assets/fondorayas.jpg);
     background-image :url(/assets/ben-kolde-_dzAvvu-5oQ-unsplash.jpg);
     background-image :url(/assets/kelly-sikkema-ReD-4a7LWoc-unsplash.jpg);
-  
-    /* background-image :url(/assets/icontactbg2.jpg); */
-;
-    /* background-image: linear-gradient(135deg, #bba08bc2, #9d999083, #aba39887, #8c8c8c73), url(/assets/fondorayas.jpg); */
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 30% 30%;
-    
+  height:50vh;
 }
-.parallax1{
-  height:70vh;
-}
-#seccion1{
-    background-color: rgba(255, 0, 0, 0);
+
+.logos{
+    width: 60px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .card{
@@ -61,35 +49,40 @@
     padding: 1rem;
     position: relative;
     width: 80wv;
-    background-image: url(/assets/icontactbg.jpg);
+  
 }
 
 .card1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap:20px;
-}
-  img{
-    view-timeline-name: --image;
-    view-timeline-axis: block ;/*acepta inline*/
-
-    animation-timeline: --image;
-    animation-name: scroll;
-
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
-}
-
-h5{
-    font-size: 6rem;
-    font-family: "Anton",sans-serif;
-    color:var(--color4);
-    
-
+   
   
 }
+.card1--text{
+    margin-left: 30%;
+}
+
+
+h5{
+    font-size: 3rem;
+    font-family: "Anton",sans-serif;
+    color:var(--color4);
+}
+.card_title{
+    text-align: center;
+}
+ .curso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+ }   
+
+  
+
 #seccion1 h5{
     -webkit-text-stroke-width: 0.001px; 
     -webkit-text-stroke-color: var(--color);
@@ -101,7 +94,10 @@ h5{
 }
 
  .card p{
-    font-size: 1.8rem;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    
  }
 
 .card a {
@@ -122,39 +118,44 @@ h5{
       text-underline-offset: 0.17lh;
     }
 
-
-   
-
+.parallax--footer{
+    background-color:rgba(30, 30, 30, 0.848);
+ width: 100%;
+ height: 100%;
+ display: flex;
+}
+.footer--left{
+    flex-basis: 50%;
+    padding: 8px;
+}
+.footer--left{
+    text-align: center;
+}
+.footer--rigth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    margin-left: 10%;
+}
+  .footer__text ,.enlace{   
+  
+    font-size: 1.2rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin:2px;
+   color:var(--color);
+}
+.enlace{
+    color:var(--color1)
+}
+   .footer--column{
     
-@keyframes scroll {
-    from{
-      opacity: 0;
-      scale:35%;  
-    }
-    to{
-        opacity: 1;
-        scale:100%;
-    }
-}
-
-/* 
- */
-
-
-.words {
-   
-        position: relative;
-        height: 80vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-  .words p{      
-    font-size: 2.3rem;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin:2px;
-      
+        column-count: 2;
+        column-gap: 100px; /* ancho de columnas */
+        column-rule: 5px outset var(--color4); 
+        text-align: justify;
+        padding: 10px;
   }
   .text-column{
     column-count: 2;
@@ -164,128 +165,4 @@ h5{
     padding: 10px;
 
   }
-  .w{
-    position: absolute;
-    color:var(--color4);
-  }
-
-  .w1,.w14,.w6,.w8,.w20,.w23,.w10{
-    color:var(--color5);
-  }
-  .w11,.w13,.w21,.w18,.w9,.w16,.w3{
-    color:var(--color6);
-  }
-  .w10 {
-    top: 3%;
-    left: 2%;
-}
-
-.w2 {
-    top: 63%;
-    left: 32%;
-}
-
-.w5 {
-    top: 43%;
-    left: 12%;
-}
-
-.w4 {
-    top: 23%;
-    left: 72%;
-}
-
-.w3 {
-    top: 13%;
-    left: 52%;
-}
-
-.w6 {
-    top: 83%;
-    left: 22%;
-}
-
-.w7 {
-    top: 73%;
-    left: 62%;
-}
-
-.w8 {
-    top: 33%;
-    left: 62%;
-}
-
-.w9 {
-    top: 28%;
-    left: 45%;
-}
-
-.w1 {
-    top: 53%;
-    left: 72%;
-}
-
-.w11 {
-    top: 8%;
-    left: 32%;
-}
-
-.w12 {
-    top: 63%;
-    left: 52%;
-}
-
-.w13 {
-    top: 23%;
-    left: 21%;
-}
-
-.w14 {
-    top: 23%;
-    left: 82%;
-}
-
-.w15 {
-    top: 83%;
-    left: 42%;
-}
-
-.w16 {
-    top: 73%;
-    left: 2%;
-}
-
-.w17 {
-    top: 33%;
-    left: 89%;
-}
-
-.w18 {
-    top: 83%;
-    left: 72%;
-}
-
-.w19 {
-    top: 3%;
-    left: 72%;
-}
-
-.w20 {
-    top: 63%;
-    left: 92%;
-}
-
-.w21 {
-    top: 53%;
-    left: 22%;
-}
-
-.w22 {
-    top: 43%;
-    left: 82%;
-}
-
-.w23 {
-    top: 23%;
-    left: 2%;
-}
+  
