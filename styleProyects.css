@@ -94,7 +94,7 @@ h5{
 }
 
  .card p{
-    font-size: 1rem;
+    font-size: clamp(0.6 8vw 1rem);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     
@@ -128,10 +128,8 @@ h5{
     flex-basis: 50%;
     padding: 8px;
 }
-.footer--left{
-    text-align: center;
-}
 .footer--rigth{
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,7 +139,7 @@ h5{
 }
   .footer__text ,.enlace{   
   
-    font-size: 1.2rem;
+    font-size: clamp(0.8 8vw 1.2rem);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    margin:2px;
    color:var(--color);
@@ -168,3 +166,31 @@ h5{
   }
   
 
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    /* Add styles for screens up to 768px width */
+    .card {
+        width: 90vw; /* Adjust width for smaller screens */
+    }
+    .parallax--footer{
+        flex-direction: column;
+    .parallax{
+        height: auto;
+    }
+}
+}
+@media only screen and (max-width: 480px) {
+    /* Add styles for screens up to 480px width */
+    .card1--text {
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
+
+    .card a {
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
+    .parallax--footer{
+        flex-direction: column;}
+    .parallax{
+        height: auto;
+    }
+}

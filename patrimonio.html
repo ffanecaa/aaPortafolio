@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +8,9 @@
     <link rel="stylesheet" href="styleProyects1.css">
     <script type="module" src="script.js"></script>
     <script type="module" src="slide.js"></script>
+    
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="hamb">
             <div class="linea linea0"></div>
@@ -21,7 +20,7 @@
         <p class="header_text">Marta </p>
         <div class="menu">
         <ul >
-            <li><a href="proyect.html">proyectos</a></li>
+            <li><a href="slide.html">proyectos</a></li>
             <li><a href="about.html">acerca</a> </li>
             <li><a href="contacto.html">contacto</a></li>
            </ul>
@@ -32,33 +31,31 @@
            </div>
         </div>
     </header>
-    <main class="proyect" id="patrimonio"> 
+    <main class="proyect" id="gym"> 
         <h2>Galicia Monumental</h2>
+<div class="video">
+       <video autoplay loop  ">
+        <source
+        src="/assets/galicia.mp4" type="video/mp4"></source>
+       </video>
+    </div>  
+ <div class="container_text">
+  
+    <p class="text"> 
+        
         <p>Este proyecto ha sido mi primera app web, localiza más de 30000 elementos patrimoniales de Galicia,están todos los Bic y unos 30000 catalogados , los permite filtrar por tipologia, nombre , tambien geolocaliza al usuario y le muestra los elementos visitables en un radio de 30km calculando la ruta, el proyecto consigue el minimo viable para ser funcional pero  seguiré trabajando en ella en los ratos libres  </p>
         <p> En el frontend se usó Svelte y Leaflet , en la parte del backend se usó express y sequilize para la base de datos.  </p>
-        
-        
-       
-
-       
-        
-        <div class="slide_container">
-
-          
-        <div class="center slide">
-        <img src="/assets/portadamapa.png">
-        <img src="/assets/mapacategorias.png">
-        <img src="/assets/Captura de pantalla 2024-04-10 161031.png">
-        <img src="/assets/esquemaRetro.png">
-       
     </div>
-      </div>
+        <div class="container_img"> 
+        <img src="/assets/mapacategorias.png"width="700"height="500">
+         
     </div>
    
-    <a href="https://github.com/ffanecaa/backend" target="_blank" rel="noopener noreferrer"></a>
-    <a href="https://github.com/ffanecaa/frontend" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+    <a class="link" href=https://github.com/WheGym-Team/whegym" >⬇️Descargar en Github</a>
+    
     </main>
 
-
+    
 </body>
 </html>

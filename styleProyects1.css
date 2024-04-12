@@ -1,23 +1,43 @@
 
 
 body{
-  background-image: url(/assets/icontactbg.jpg);
+ 
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 .body{
   background-image: url(/assets/icontactbg.jpg);
+  
 }
-.slide_container{
-    margin-top:20px;
-    display: flex;
-   
-    align-items: center;
-    justify-content: space-evenly;
-   gap:20px;
-   
-    
+.video{
+  margin: 10px auto;
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+
+.video video{
+  width: 100%;
+  height: 100%;
+}
+
+
+.container_text{
+  width: 80%;
+ margin: 0 auto;
+}
+
+.text{
+  font-family: "montserrat",sans-serif;
+ text-align: justify;
+}
+
+
+
 
 .proyect h2{
     font-size: 3rem;
@@ -27,66 +47,35 @@ body{
 
 }
 
-.slide img {
-    width: inherit;
+
+  
+  .container_img {
+  
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    outline: 5px solid var(--color1);
+    border-radius: 3px;
+    margin: 60px auto;
+
+    
+  }
+
+
+
+
+
+  .container_img img {
+    width: 100%;
     height: inherit;
     margin: 0;
     padding: 0;
     border: none;
   }
+
   
-  .slide {
-    position: relative;
-    white-space: nowrap;
-    width: 700px;
-    height: 500px;
-    overflow: hidden;
-    outline: 5px solid var(--color1);
-    border-radius: 3px;
+  .link{
+    color: var(--color1);
     
   }
- 
-  .slide > :first-child {
-    animation-name: slide;
-    animation-duration: 12s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-  }
   
-  @keyframes slide {
-    0% {
-      margin-left: 0;
-    }
-    33% {
-      margin-left: -100%;
-    }
-    66% {
-      margin-left: -200%;
-    }
-    100% {
-      margin-left: -300%;
-    }
-  }
-  
-  .center {
-    margin:auto;
-    /* position: absolute;
-    top:40px;
-    left: 70px; */
-  
-  }
-
-  /* .img_ordena{
-    position: absolute;
-    top:0px;
-    left: 0px;
-
-  } */
-
-
-/* 
-.img_ordena{
-    width: 650px;
-    height: 450px;
-} */
-
