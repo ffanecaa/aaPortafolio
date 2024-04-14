@@ -6,11 +6,7 @@ body{
 }
 
 
-/* .text p:hover{
-    color: #b496803c; 
-    -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: #b496803c;
-} */
+
 
 .section{
     width: 100%;
@@ -56,13 +52,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap:20px;
-   
   
-}
-.card1--text{
-    margin-left: 30%;
+  
 }
 
 
@@ -78,7 +71,10 @@ h5{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:10px;
+    justify-content: center;
+    gap:8px;
+
+
  }   
 
   
