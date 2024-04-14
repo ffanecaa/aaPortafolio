@@ -62,3 +62,33 @@ body{
     padding: 5px;
 }
 
+
+.img_buttom{
+    display: none;
+}
+@media  (max-width: 480px) {
+
+    .mainContact{
+   flex-direction: column;
+  
+
+}
+.img_top{
+   display: none;}
+.img_buttom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+   
+}  
+.img_buttom img{
+    width: 200px;
+}
+}
+
+@media (max-width: 768px) {
+.img_top img{
+    width: 300px;
+}
+}
