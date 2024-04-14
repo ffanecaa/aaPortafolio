@@ -109,6 +109,7 @@ body{
     width: 80%;
     margin: 0 auto;
     gap:10px;
+    padding-bottom: 2rem;
   
 
  
@@ -124,6 +125,7 @@ body{
  align-items: center;
  gap:3px;
  object-fit: contain;
+ padding-bottom: 2rem;
 
 }
 
@@ -159,17 +161,14 @@ display: flex;
   gap:5px;
   margin-left: 10%;
 }
-.footer__text ,.enlace{   
+.footer__text {   
 
   font-size: clamp(0.8 8vw 1.2rem);
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  margin:2px;
  color:var(--color);
 }
-.enlace{
-  color:var(--color1);
-  
-}
+
  .footer--column{
   
       column-count: 2;
@@ -186,3 +185,62 @@ display: flex;
   padding: 10px;
 
 }
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+   
+
+  .card {
+
+      min-width: 240px;
+      max-width: 340px;
+      width: 100%;
+      margin:10px auto;
+  }
+
+
+
+  
+}
+
+@media   (max-width: 767px) {
+  .card {
+      min-width: 200px;
+      max-width: 285px;
+      width: 100%;
+      margin:10px auto;
+
+     
+  }
+  .parallax--footer{
+    flex-direction: column;
+    padding: 2px;
+    margin: 0;
+  }
+  .footer--rigth{
+margin:0;
+  }
+
+.footer__text{
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+.enlace{
+  padding: 1rem;
+}
+
+.slide{
+ position: static;
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+margin: 0.5rem;
+
+}
+.video{
+  height: auto;
+
+}
+.proyect_title{
+  margin-bottom: 0.5rem;
+}
+} 
