@@ -4,12 +4,14 @@ const retroshopContainer = document.getElementById('retroshop');
 const patrimContainer = document.getElementById('patrimonio');
 const parejasContainer = document.getElementById('parejas');
 const fractalContainer = document.getElementById('fractal');
+const rpmContainer = document.getElementById('rpm');
 
 const patrimon = document.getElementById('patribtn');
 const retro = document.getElementById('retrobtn');
 const gyms = document.getElementById('gymbtn');
 const pax = document.getElementById('paxbtn');
 const fractl = document.getElementById('frabtn');
+const rpm33 = document.getElementById('rpmbtn');
 // const next = document.getElementById('adelante');
 // const prev = document.getElementById('atras');
 const next = document.querySelectorAll('.adelante');
@@ -34,6 +36,9 @@ pax.addEventListener('click', ()=>{
 fractl.addEventListener('click', ()=>{
     showProject('fractal')
 })
+rpm33.addEventListener('click', ()=>{
+    showProject('fractal')
+})
 
 
 // Obtener el parámetro currentIndex de la URL
@@ -52,6 +57,7 @@ function showProject(projectToShow) {
     patrimContainer.style.display ='none';
     parejasContainer.style.display = 'none';
     fractalContainer.style.display = 'none';
+    rpmContainer.style.display = 'none';
    
 
     // Remover la clase 'selected' de todos los botones
@@ -60,6 +66,7 @@ function showProject(projectToShow) {
     patrimon.classList.remove('selected');
     pax.classList.remove('selected');
     fractl.classList.remove('selected')
+    rpm33.classList.remove('selected')
 
     // Mostrar el contenedor de proyecto adecuado
     if (projectToShow === 'gym') {
@@ -86,6 +93,11 @@ function showProject(projectToShow) {
         fractl.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
         currentProject = 'fractal';
     }
+     else if (projectToShow === 'rpm') {
+       rpmContainer.style.display = 'block';
+        rpm33.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
+        currentProject = 'rpm';
+    }
 }
 
 
@@ -100,7 +112,7 @@ button.addEventListener('click',()=>{
 })})
 
 function navigateProject(direction) {
-    const projects = ['gym', 'retroshop', 'patrimonio','parejas','fractal'];
+    const projects = ['gym', 'retroshop', 'patrimonio','rpm','parejas','fractal'];
     let currentIndex = projects.indexOf(currentProject);
     let newIndex;
 
