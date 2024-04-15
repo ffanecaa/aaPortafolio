@@ -117,6 +117,8 @@ inset:0;
   font-weight: 500;
   position: absolute;
   transition-delay: 0s;
+
+    pointer-events: none;
 }
 .card a {
 
