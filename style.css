@@ -185,3 +185,10 @@ a:hover{
        translate: 0;
     }
 }
+/*borrar */
+
+@media   (max-width: 767px) {
+    li{
+        font-size:2rem ;
+    }
+}
