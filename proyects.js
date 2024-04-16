@@ -11,7 +11,7 @@ const retro = document.getElementById('retrobtn');
 const gyms = document.getElementById('gymbtn');
 const pax = document.getElementById('paxbtn');
 const fractl = document.getElementById('frabtn');
-const rpm33 = document.getElementById('rpmbtn');
+const rpmb = document.getElementById('rpmbtn');
 // const next = document.getElementById('adelante');
 // const prev = document.getElementById('atras');
 const next = document.querySelectorAll('.adelante');
@@ -36,8 +36,8 @@ pax.addEventListener('click', ()=>{
 fractl.addEventListener('click', ()=>{
     showProject('fractal')
 })
-rpm33.addEventListener('click', ()=>{
-    showProject('fractal')
+rpmb.addEventListener('click', ()=>{
+    showProject('rpm')
 })
 
 
@@ -66,7 +66,7 @@ function showProject(projectToShow) {
     patrimon.classList.remove('selected');
     pax.classList.remove('selected');
     fractl.classList.remove('selected')
-    rpm33.classList.remove('selected')
+    rpmb.classList.remove('selected')
 
     // Mostrar el contenedor de proyecto adecuado
     if (projectToShow === 'gym') {
@@ -83,7 +83,7 @@ function showProject(projectToShow) {
         currentProject = 'patrimonio';
     }  else if (projectToShow === 'rpm') {
         rpmContainer.style.display = 'block';
-         rpm33.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
+         rpmb.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
          currentProject = 'rpm';
      }
      else if (projectToShow === 'parejas') {
