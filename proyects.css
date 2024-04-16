@@ -180,7 +180,7 @@ display: flex;
       column-count: 2;
       column-gap: 100px; /* ancho de columnas */
       column-rule: 5px outset var(--color4); 
-      text-align: justify;
+      
       padding: 10px;
 }
 .text-column{
