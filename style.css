@@ -22,11 +22,11 @@
 
 .header {
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos en el header */
-    padding: 10px; /* Añade un poco de espacio alrededor del contenido del header */
+    align-items: center; 
+    padding: 10px; 
 }
 .menu {
-    display: none; /* Inicialmente oculto */
+    display: none; 
   
 }
 .hamb {
@@ -40,10 +40,10 @@
     justify-content: center;
     align-items: center; /* Centra el contenido del botón de hamburguesa */
     cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
- border: 1px solid white;
- border-right-style: none;
-  position: relative;
-  z-index: 1000;
+    border: 1px solid white;
+     border-right-style: none;
+    position: relative;
+    z-index: 1000;
     
 }
 
@@ -82,7 +82,7 @@
     width: 100vw;
     height: 100%;
     display: flex;
-    width: calc(100vw - 10px); /* Resta el grosor del borde del ancho total */
+    width: 100vw;
     justify-content: space-evenly;
     position: fixed;
     top:0px;
