@@ -92,60 +92,17 @@ h5{
       text-underline-offset: 0.17lh;
     }
 
-
-
-
-
-    @media   (max-width: 768px) {
-        .card {
-            width: 90vw; /* Adjust width for smaller screens */
-        }
-        .card1{
-            margin-left: 0 auto;
-        }
-
-
-
-
-
-        .parallax--footer{
-          flex-direction: column;
-          height: auto;
-      
-          margin: 0;
-        }
-        .footer--rigth{
-      margin:0;
-        }
-      
-      .footer__text{
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
-      }
+    .text-column{
+      column-count: 2;
+      column-gap: 100px; /* ancho de columnas */
+      column-rule: 5px outset var(--color4); 
+      text-align: justify;
+      padding: 10px;
     
-      .footer_links img{
-        width: 30px;
-        height: 30px;
-      }
-      } 
-      
-      @media  (max-width: 480px) {
-        /* Add styles for screens up to 480px width */
-        .card1--text {
-            margin-left: 0; /* Adjust margin for smaller screens */
-        }
-        .card1{
-            margin-left: 0 auto;
-        }
-    
-        .card a {
-            margin-left: 0; /* Adjust margin for smaller screens */
-        }
-       
+
     }
 
-
-
+  
 
 
 
@@ -254,12 +211,27 @@ h5{
   }
   
 
-  
-  @media   (max-width: 767px) {
-   
+ 
+  @media   (max-width: 768px) {
+    .card {
+        width: 100vw; /* Adjust width for smaller screens */
+    }
+    .card1{
+        margin-left: 0 auto;
+    }
+
+.text-column{
+  column-count: 1;
+  padding: 5px;
+
+}
+
+
+
     .parallax--footer{
       flex-direction: column;
-      padding: 2px;
+      height: auto;
+  
       margin: 0;
     }
     .footer--rigth{
@@ -270,7 +242,26 @@ h5{
     margin-top: 0.5rem;
     font-size: 0.8rem;
   }
- 
 
+  .footer_links img{
+    width: 30px;
+    height: 30px;
+  }
   } 
   
+  @media  (max-width: 480px) {
+    /* Add styles for screens up to 480px width */
+    .card1--text {
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
+    .card1{
+        margin-left: 0 auto;
+    }
+
+    .card a {
+        margin-left: 0; /* Adjust margin for smaller screens */
+    }
+   
+}
+
+
