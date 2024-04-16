@@ -2,7 +2,7 @@ body{
     background-image: url(/assets/icontactbg2.jpg);
     color:var(--color);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
    
 }
 
