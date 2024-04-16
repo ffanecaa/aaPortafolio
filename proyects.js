@@ -81,7 +81,11 @@ function showProject(projectToShow) {
         patrimContainer.style.display = 'block';
         patrimon.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
         currentProject = 'patrimonio';
-    }
+    }  else if (projectToShow === 'rpm') {
+        rpmContainer.style.display = 'block';
+         rpm33.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
+         currentProject = 'rpm';
+     }
      else if (projectToShow === 'parejas') {
         parejasContainer.style.display = 'block';
         pax.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
@@ -93,11 +97,7 @@ function showProject(projectToShow) {
         fractl.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
         currentProject = 'fractal';
     }
-     else if (projectToShow === 'rpm') {
-       rpmContainer.style.display = 'block';
-        rpm33.classList.add('selected'); // Agregar la clase 'selected' al botón del proyecto seleccionado
-        currentProject = 'rpm';
-    }
+   
 }
 
 
