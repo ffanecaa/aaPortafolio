@@ -219,7 +219,9 @@ h5{
     .card1{
         margin-left: 0 auto;
     }
-
+.parallax{
+  height: 30vh;
+}
 .text-column{
   column-count: 1;
   padding: 5px;
