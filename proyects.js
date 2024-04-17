@@ -19,7 +19,7 @@ const prev = document.querySelectorAll('.atras');
 const nextm = document.querySelectorAll('.movil-adelante');
 const prevm = document.querySelectorAll('.movil-atras');
 
-const projects = document.querySelectorAll('.project');
+const projects = document.querySelectorAll('.proyect');
 let touchstartX = 0;
 let touchendX = 0;
 let currentProject = 'gym';
@@ -180,6 +180,5 @@ function navigateProjectMovil(direction) {
     showProject(projects[newIndex]);
 }
 
-//
-let startX, startY, distX,distY;
+
 
