@@ -139,14 +139,16 @@ projects.forEach(project => {
 
 function handleGesture() {
     const isMobile = window.innerWidth <= 768; // Define el límite para considerar dispositivos móviles
-
+    const minSwipeDistance = 50;
     if (isMobile) {
-        if (touchendX < touchstartX) {
-            navigateProjectMovil('nextm');
-        }
+        const deltaX = touchendX - touchstartX;
 
-        if (touchendX > touchstartX) {
-            navigateProjectMovil('prevm');
+        if (Math.abs(deltaX) >= minSwipeDistance) {
+            if (deltaX < 0) {
+                navigateProjectMovil('nextm');
+            } else {
+                navigateProjectMovil('prevm');
+            }
         }
     }
 }
