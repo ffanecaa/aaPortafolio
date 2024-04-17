@@ -165,9 +165,7 @@ body{
     right:100px;
     z-index: 200;
   }
-  .link-movil{
-    display: none;
-  }
+
   
 /*  */
 
@@ -275,21 +273,5 @@ margin:0;
 .adelante, .atras{
   display: none;
 }
-/* 
-.link-movil{
-  display: block;
-  position: absolute;
-  height: 70%;
-  width: 50vw;
-  z-index: 2000;
- 
-}
-.movil-atras{
-  top:0;
-  left:0;
-}
-.movil-adelante{
-  top:0;
-  right:0;
-} */
+
 } 

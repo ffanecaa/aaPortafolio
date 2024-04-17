@@ -116,15 +116,8 @@ button.addEventListener('click',()=>{
 })})
 
 
-// nextm.forEach(button =>{
-// button.addEventListener('click',()=>{
-//     navigateProjectMovil('nextm')
-// })})
 
-// prevm.forEach(button =>{
-// button.addEventListener('click',()=>{
-//     navigateProjectMovil('prevm')
-// })})
+
 
 projects.forEach(project => {
     project.addEventListener('touchstart', function(event) {
@@ -138,7 +131,7 @@ projects.forEach(project => {
 });
 
 function handleGesture() {
-    const isMobile = window.innerWidth <= 768; // Define el límite para considerar dispositivos móviles
+    const isMobile = window.innerWidth <= 768; 
     const minSwipeDistance = 50;
     if (isMobile) {
         const deltaX = touchendX - touchstartX;
