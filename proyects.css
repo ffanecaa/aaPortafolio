@@ -13,15 +13,20 @@ body{
  
   }
 
+.proyect{
+  position: relative;
+}
+
   .slide{
-    position:fixed;
-    top:50vh;
-    right: 10px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
+    position: static;
+     display: flex;
+     flex-direction: row;
+    justify-content: center;
+   margin: 0.5rem;
+   cursor: pointer;
     gap:8px;
-  }
+   
+   }
 .circle:hover{
   transform: scale(1.5);
 
@@ -144,6 +149,25 @@ body{
 
     
   }
+
+
+  /* atra*/
+
+  .atras{
+    position: absolute;
+    top:40%;
+    left:100px;
+    z-index: 200;
+  }
+  .adelante{
+    position: absolute;
+    top:40%;
+    right:100px;
+    z-index: 200;
+  }
+  .link-movil{
+    display: none;
+  }
   
 /*  */
 
@@ -204,18 +228,14 @@ display: flex;
   }
 
   .slide{
-     position: static;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     margin: 0.5rem;
+    
    gap:16px;
    }
 
   
 } 
 
-@media   (max-width: 767px) {
+@media   (max-width: 768px) {
   .card {
       min-width: 200px;
       max-width: 285px;
@@ -241,14 +261,7 @@ margin:0;
   padding: 1rem;
 }
 
-.slide{
- position: static;
-  display: flex;
-  flex-direction: row;
- justify-content: center;
-margin: 0.5rem;
 
-}
 .video{
   height: auto;
 
@@ -256,5 +269,27 @@ margin: 0.5rem;
 .proyect_title{
   margin-bottom: 0.5rem;
   gap:26px;
+}
+
+
+.adelante, .atras{
+  display: none;
+}
+
+.link-movil{
+  display: block;
+  position: absolute;
+  height: 70%;
+  width: 50vw;
+  z-index: 2000;
+ 
+}
+.movil-atras{
+  top:0;
+  left:0;
+}
+.movil-adelante{
+  top:0;
+  right:0;
 }
 } 

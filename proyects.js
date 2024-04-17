@@ -16,6 +16,8 @@ const rpmb = document.getElementById('rpmbtn');
 // const prev = document.getElementById('atras');
 const next = document.querySelectorAll('.adelante');
 const prev = document.querySelectorAll('.atras');
+const nextm = document.querySelectorAll('.movil-adelante');
+const prevm = document.querySelectorAll('.movil-atras');
 
 
 let currentProject = 'gym';
@@ -111,6 +113,17 @@ button.addEventListener('click',()=>{
     navigateProject('prev')
 })})
 
+
+nextm.forEach(button =>{
+button.addEventListener('click',()=>{
+    navigateProjectMovil('nextm')
+})})
+
+prevm.forEach(button =>{
+button.addEventListener('click',()=>{
+    navigateProjectMovil('prevm')
+})})
+
 function navigateProject(direction) {
     const projects = ['gym', 'retroshop', 'patrimonio','rpm','parejas','fractal'];
     let currentIndex = projects.indexOf(currentProject);
@@ -119,6 +132,19 @@ function navigateProject(direction) {
     if (direction === 'next') {
         newIndex = (currentIndex + 1) % projects.length;
     } else if (direction === 'prev') {
+        newIndex = (currentIndex - 1 + projects.length) % projects.length;
+    }
+
+    showProject(projects[newIndex]);
+}
+function navigateProjectMovil(direction) {
+    const projects = ['gym', 'retroshop', 'patrimonio','rpm','parejas','fractal'];
+    let currentIndex = projects.indexOf(currentProject);
+    let newIndex;
+
+    if (direction === 'nextm') {
+        newIndex = (currentIndex + 1) % projects.length;
+    } else if (direction === 'prevm') {
         newIndex = (currentIndex - 1 + projects.length) % projects.length;
     }
 
