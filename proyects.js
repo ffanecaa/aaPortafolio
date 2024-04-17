@@ -126,6 +126,7 @@ button.addEventListener('click',()=>{
 //     navigateProjectMovil('prevm')
 // })})
 
+
 mainContact.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;
 }, false);
@@ -136,12 +137,16 @@ mainContact.addEventListener('touchend', function(event) {
 }, false);
 
 function handleGesture() {
-    if (touchendX < touchstartX) {
-        navigateProjectMovil('nextm');
-    }
+    const isMobile = window.innerWidth <= 768; // Define el límite para considerar dispositivos móviles
 
-    if (touchendX > touchstartX) {
-        navigateProjectMovil('prevm');
+    if (isMobile) {
+        if (touchendX < touchstartX) {
+            navigateProjectMovil('nextm');
+        }
+
+        if (touchendX > touchstartX) {
+            navigateProjectMovil('prevm');
+        }
     }
 }
 
