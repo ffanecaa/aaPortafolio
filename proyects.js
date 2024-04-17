@@ -19,7 +19,7 @@ const prev = document.querySelectorAll('.atras');
 const nextm = document.querySelectorAll('.movil-adelante');
 const prevm = document.querySelectorAll('.movil-atras');
 
-const mainContact = document.querySelector('.proyect');
+const projects = document.querySelectorAll('.project');
 let touchstartX = 0;
 let touchendX = 0;
 let currentProject = 'gym';
@@ -126,15 +126,16 @@ button.addEventListener('click',()=>{
 //     navigateProjectMovil('prevm')
 // })})
 
+projects.forEach(project => {
+    project.addEventListener('touchstart', function(event) {
+        touchstartX = event.changedTouches[0].screenX;
+    }, false);
 
-mainContact.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-}, false);
-
-mainContact.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    handleGesture();
-}, false);
+    project.addEventListener('touchend', function(event) {
+        touchendX = event.changedTouches[0].screenX;
+        handleGesture();
+    }, false);
+});
 
 function handleGesture() {
     const isMobile = window.innerWidth <= 768; // Define el límite para considerar dispositivos móviles
