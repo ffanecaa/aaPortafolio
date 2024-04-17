@@ -275,7 +275,7 @@ margin:0;
 .adelante, .atras{
   display: none;
 }
-
+/* 
 .link-movil{
   display: block;
   position: absolute;
@@ -291,5 +291,5 @@ margin:0;
 .movil-adelante{
   top:0;
   right:0;
-}
+} */
 } 
