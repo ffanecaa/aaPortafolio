@@ -19,7 +19,9 @@ const prev = document.querySelectorAll('.atras');
 const nextm = document.querySelectorAll('.movil-adelante');
 const prevm = document.querySelectorAll('.movil-atras');
 
-
+const mainContact = document.querySelector('.proyect');
+let touchstartX = 0;
+let touchendX = 0;
 let currentProject = 'gym';
 
 
@@ -114,15 +116,36 @@ button.addEventListener('click',()=>{
 })})
 
 
-nextm.forEach(button =>{
-button.addEventListener('click',()=>{
-    navigateProjectMovil('nextm')
-})})
+// nextm.forEach(button =>{
+// button.addEventListener('click',()=>{
+//     navigateProjectMovil('nextm')
+// })})
 
-prevm.forEach(button =>{
-button.addEventListener('click',()=>{
-    navigateProjectMovil('prevm')
-})})
+// prevm.forEach(button =>{
+// button.addEventListener('click',()=>{
+//     navigateProjectMovil('prevm')
+// })})
+
+mainContact.addEventListener('touchstart', function(event) {
+    touchstartX = event.changedTouches[0].screenX;
+}, false);
+
+mainContact.addEventListener('touchend', function(event) {
+    touchendX = event.changedTouches[0].screenX;
+    handleGesture();
+}, false);
+
+function handleGesture() {
+    if (touchendX < touchstartX) {
+        navigateProjectMovil('nextm');
+    }
+
+    if (touchendX > touchstartX) {
+        navigateProjectMovil('prevm');
+    }
+}
+
+
 
 function navigateProject(direction) {
     const projects = ['gym', 'retroshop', 'patrimonio','rpm','parejas','fractal'];
@@ -150,4 +173,7 @@ function navigateProjectMovil(direction) {
 
     showProject(projects[newIndex]);
 }
+
+//
+let startX, startY, distX,distY;
 
