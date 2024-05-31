@@ -1,0 +1,147 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylein.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+    
+</head>
+<body>
+     <header class="header">
+        <div class="hamb">
+            <div class="linea linea0"></div>
+            <div class="linea linea1"></div>
+            <div class="linea linea3"></div>
+        </div>
+        <p class="header_text">Marta </p>
+        <div class="menu">
+        <ul >
+            <li><a href="proyect.html">proyectos</a></li>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="about.html">acerca</a> </li>
+            <li><a href="contacto.html">contacto</a></li>
+          
+           </ul>
+           <div class="info">
+            Marta Dieguez
+            Correo: ffanecaa@gmail.com
+           
+           </div>
+        </div>
+    </header> 
+    
+    <main class="container" >
+      <section>
+<div class="pattern">
+
+
+    <div class="face face1"></div>
+    <div class="face face2">
+       
+    </div>
+</div>
+       </section>
+
+       <p style="font-size:3rem;position: absolute; top: 40%; left: 40%;z-index: 100000; animation: none;transform: none;">desrroladora web </p>
+       <button style=" width: 150px;font-size:2rem;position: absolute; top: 50%; left: 50%;z-index: 100000; animation: none;transform: none;">entra</button>
+    </main>
+</body>
+</html>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.pattern{
+position: relative;
+transform-style: preserve-3d;
+perspective: 1000px;
+ animation: animaBG 20s ease-in-out infinite; 
+}
+
+.pattern .face{
+position: relative;
+width: 100%;
+height: 50vh;
+background-image:linear-gradient(var(--color4),white
+);
+
+background-size:100px 100px ;
+animation: anima 10s linear infinite;
+}
+
+
+@keyframes anima{
+    0%{
+       background-position: 0; 
+    }
+    100%{
+       background-position: 80px; 
+    }
+}
+@keyframes animaBG{
+    0%, 100%{
+      transform: scale(1.6) rotate(-15deg);
+    }
+    50%{
+        transform: scale(1.6) rotate(10deg);
+    }
+}
+
+
+
+
+
+.pattern .face.face2{
+height: 100vh;
+transform-origin: top;
+transform: rotateX(70deg);
+
+}
+
+.pattern .face1:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+height: 125px;
+background-image: linear-gradient(0deg,rgba(0,0,0,0.5));
+
+
+
+}
+
+.pattern .face1:after{
+    content: '';
+    position: absolute;
+    bottom: top;
+    left: 0;
+    width: 100%;
+height: 125px;
+background-image: linear-gradient(180deg,rgba(127, 155, 24, 0.5));
+
+
+
+}
+

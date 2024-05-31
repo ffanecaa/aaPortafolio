@@ -1,9 +1,12 @@
 body{
-    background-image: url(/assets/icontactbg2.jpg);
+    /* background-image: url(/assets/icontactbg2.jpg); */
     color:var(--color);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /* letter-spacing: 3px; */
-   
+    font-family: "Monotype helvetica now display", sans-serif;
+    font-size: 1vw;
+    background: "#e8e2da";
+    background: #2e2a27;
 }
 
 
