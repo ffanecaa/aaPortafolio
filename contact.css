@@ -66,15 +66,39 @@ body{
     padding: 5px;
 }
 
+.ico1{
+    width: 50px;
+    height: 30px;
+}
 
+.ico2{
+    width: 40px;
+    height: 30px;
+}
 .img_buttom{
     display: none;
 }
 @media  (max-width: 480px) {
-
+body{
+    font-size: 1.5rem;
+}
     .mainContact{
-   flex-direction: column;
-  
+   flex-direction: column;}
+   .ico1{
+    width: 40px;
+    height: 20px;
+}
+
+.links{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.ico2{
+    width: 30px;
+    height: 20px;
+}
 
 }
 .img_top{
@@ -89,7 +113,7 @@ body{
 .img_buttom img{
     width: 200px;
 }
-}
+
 
 @media (max-width: 768px) {
 .img_top img{
@@ -100,6 +124,6 @@ body{
 .links{
    position: relative;
    bottom: 0;
-   left:42%;
+   margin: 0 auto;
  
 }
