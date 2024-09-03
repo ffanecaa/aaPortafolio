@@ -160,6 +160,16 @@ a{
 a:hover{
     text-decoration: underline var(--color5);
 }
+
+.ico1{
+    width: 50px;
+    height: 30px;
+}
+
+.ico2{
+    width: 40px;
+    height: 30px;
+}
 /*  main */
 
 
@@ -195,5 +205,14 @@ a:hover{
     }
     .info{
         display: none;
+    }
+    .ico1{
+        width: 40px;
+        height: 20px;
+    }
+    
+    .ico2{
+        width: 30px;
+        height: 20px;
     }
 }
