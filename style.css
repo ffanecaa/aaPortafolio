@@ -193,4 +193,7 @@ a:hover{
     li{
         font-size:2rem ;
     }
+    .info{
+        display: none;
+    }
 }
